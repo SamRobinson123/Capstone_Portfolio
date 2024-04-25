@@ -1,26 +1,40 @@
 # Capstone Portfolio
 
-This portfolio showcases the Data Science Capstone project, focusing on a real-world application of machine learning techniques to solve a significant problem in the finance sector.
+This portfolio highlights the Data Science Capstone project, focusing on the application of advanced machine learning techniques to address a critical challenge in the financial sector.
 
 ## [Home Credit: Project Overview](https://github.com/SamRobinson123/Capstone_Portfolio/blob/main/HomeCreditModel_Final.ipynb)
+![Project Status](https://img.shields.io/badge/status-complete-green.svg)
 
-### Objective
-The primary objective of this project was to develop a predictive model that can assess a customer's ability to repay a loan, thereby increasing financial inclusion. This task involved analyzing a large dataset to predict loan repayment probabilities.
+### 🎯 Objective
+The primary goal was to develop a predictive model capable of assessing a customer's loan repayment abilities, thereby enhancing financial inclusion. This involved analyzing a substantial dataset to accurately predict loan repayment probabilities.
 
-### Project Details
-- **Dataset**: The analysis was based on a dataset consisting of over 100,000 data points, which provided a comprehensive set of information to model customer behavior.
-- **Data Cleaning**: Extensive data cleaning techniques were applied to handle missing values, outliers, and erroneous entries, ensuring the quality and reliability of the analyses.
-- **Modeling**: A CatBoost Model was developed due to its efficiency with categorical data. The model achieved an AUC (Area Under the Curve) of 0.77, indicating a strong ability to differentiate between customers who can and cannot repay a loan.
-- **Accuracy**: The model reached an accuracy of 92%, showcasing its effectiveness in predicting loan repayment.
+### 📊 Project Details
+- **Dataset**: The project utilized a dataset with over 100,000 data points, providing a robust foundation for modeling customer behaviors.
+- **Data Cleaning**: Implemented comprehensive data cleaning techniques to manage missing values, outliers, and incorrect entries, ensuring high data integrity.
+- **Modeling**: Developed a CatBoost Model, chosen for its effectiveness with categorical data. Achievements include:
+  - **AUC (Area Under the Curve)**: 0.77, demonstrating strong predictive capabilities.
+  - **Accuracy**: 92%, highlighting the model's effectiveness in real-world scenarios.
 
-### Outcomes and Impact
-- The project successfully provides a model that can be deployed to help financial institutions assess the creditworthiness of potential borrowers, contributing to increased access to credit for underrepresented populations.
-- The insights derived from this project can assist in making informed decisions, thus reducing the risk of non-repayment and enabling a more inclusive financial environment.
+### 🚀 Outcomes and Impact
+- **Deployment**: The model is ready for deployment, allowing financial institutions to better assess borrower creditworthiness.
+- **Strategic Insights**: The insights from this project are instrumental in reducing financial risks and supporting more inclusive credit practices.
 
-### EDA Examples
+### 📈 Exploratory Data Analysis (EDA) Examples
+These visualizations illustrate key insights from the data exploration phase and underscore the model's decision-making framework.
+
+#### Feature Importance
 ![Feature Rank](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/Capture.JPG "Feature Rank")
 
-![Default Rate by Education](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/default%20rate%20by%20education.JPG "Default Rate by Education")
+#### Default Rate by Education
+![Default Rate by Education](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/deafult%20rate%20by%20education.JPG "Default Rate by Education")
 
+#### Default Rate by Family Status
 ![Default Rate by Family Status](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/default%20rate%20by%20family%20status.JPG "Default Rate by Family Status")
+
+---
+
+### 📝 Additional Resources
+For more detailed analysis and code, please refer to the notebooks and scripts within this repository.
+
+---
 
