@@ -17,5 +17,10 @@ The primary objective of this project was to develop a predictive model that can
 - The project successfully provides a model that can be deployed to help financial institutions assess the creditworthiness of potential borrowers, contributing to increased access to credit for underrepresented populations.
 - The insights derived from this project can assist in making informed decisions, thus reducing the risk of non-repayment and enabling a more inclusive financial environment.
 
+### EDA Examples
+![Feature Rank](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/Capture.JPG "Feature Rank")
 
+![Default Rate by Education](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/default%20rate%20by%20education.JPG "Default Rate by Education")
+
+![Default Rate by Family Status](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/default%20rate%20by%20family%20status.JPG "Default Rate by Family Status")
 
