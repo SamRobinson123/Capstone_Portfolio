@@ -35,9 +35,3 @@ These visualizations illustrate key insights from the data exploration phase and
 
 #### Default Rate by Family Status
 ![Default Rate by Family Status](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/default%20rate%20by%20family%20status.JPG "Default Rate by Family Status")
-
----
-
-### 📝 Additional Resources
-To view the code in more detail, please click on [Home Credit Project Overview](https://github.com/SamRobinson123/Capstone_Portfolio/blob/main/HomeCreditModel_Final.ipynb) to visit the GitHub page.
----
