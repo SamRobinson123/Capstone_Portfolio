@@ -1,6 +1,6 @@
 # Capstone Portfolio
 
-This portfolio highlights the Data Science Capstone project, focusing on the application of advanced machine learning techniques to address a critical challenge in the financial sector.
+This portfolio highlights the Data Science Capstone project, focusing on the application of advanced machine learning techniques to address a critical challenge in the financial sector. Click the link below to view the code on my personal GitHub page.
 
 ## [Home Credit: Project Overview](https://github.com/SamRobinson123/Capstone_Portfolio/blob/main/HomeCreditModel_Final.ipynb)
 ![Project Status](https://img.shields.io/badge/status-complete-green.svg)
