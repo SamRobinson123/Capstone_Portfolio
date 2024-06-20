@@ -39,5 +39,5 @@ These visualizations illustrate key insights from the data exploration phase and
 ---
 
 ### 📝 Additional Resources
-To view the code in more detail, please click on Home Credit Project Overview to visit the GitHub page. 
+To view the code in more detail, please click on [Home Credit Project Overview](https://github.com/SamRobinson123/Capstone_Portfolio/blob/main/HomeCreditModel_Final.ipynb) to visit the GitHub page.
 ---
