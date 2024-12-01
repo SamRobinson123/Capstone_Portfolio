@@ -6,65 +6,69 @@ This portfolio highlights the Data Science Capstone project, focusing on leverag
 ![Project Status](https://img.shields.io/badge/status-complete-green.svg)
 
 ### Business Problem
-The **Group6Capstone** project aims to analyze data and build predictive models to address challenges in [insert domain or sector, e.g., financial forecasting, healthcare analytics, etc.]. The project’s main focus is to ensure that data-driven insights can be effectively leveraged to [specific goal, e.g., improve financial performance, enhance decision-making, or optimize operations]. The project applies modern machine learning techniques to uncover trends, make accurate predictions, and drive actionable recommendations.
+The **Group6Capstone** project addresses a significant operational challenge for Swire Coca-Cola, which experiences an annual loss of approximately $60 million due to machine downtime. Workers are currently deployed reactively to fix broken machines, resulting in delays and productivity losses. This project focuses on building a predictive model to identify machines at high risk of failure, enabling proactive interventions and reducing downtime.
 
 ### 🎯 Objective
 The primary goal of this project was to:
-- [Insert objective, e.g., "Develop a predictive model for customer segmentation," or "Build a time series model for financial forecasting."]
-- Leverage exploratory data analysis (EDA) to uncover actionable insights.
-- Implement machine learning models to solve [specific problem].
+- Develop a **survivor model** to predict time-to-failure for machines based on historical maintenance data and operational logs.
+- Leverage exploratory data analysis (EDA) to refine the dataset and uncover critical patterns influencing downtime.
+- Implement predictive modeling techniques to identify high-risk machines and enable proactive maintenance.
 
 ### 📊 Project Details
-- **Dataset**: The project utilized a comprehensive dataset containing [insert data points/records], capturing information on [brief description of the data, e.g., transactions, customer behavior, etc.].
-- **Data Cleaning**: Applied robust preprocessing techniques, including:
-  - Handling missing values and duplicates.
-  - Addressing outliers using statistical methods.
-  - Transforming variables for better modeling performance.
+- **Dataset**: The dataset included operational logs, maintenance histories, and machine identifiers. Due to a high proportion of missing data (80% null values), the focus was on a subset where at least 20% of values were present to construct reliable models.
+- **Data Cleaning and Feature Engineering**:
+  - Created key metrics, such as "Time to Failure" and "Days Since Planned Maintenance," which served as critical inputs to the survivor model.
+  - Standardized and split complex columns, like `FUNCTIONAL_LOC`, for improved modeling and interpretability.
+  - Calculated maintenance frequency and part replacement rates to enhance feature robustness.
+
 - **Modeling**:
-  - Developed a [insert model name, e.g., Random Forest, XGBoost, etc.] model to tackle the problem.
-  - Achieved the following metrics:
-    - **Accuracy**: [Insert value, e.g., 92%].
-    - **Other Metric (e.g., AUC)**: [Insert value, e.g., 0.85].
-  - Models were evaluated using cross-validation to ensure generalizability.
- 
+  - Built a **survivor model** using Cox Proportional Hazards regression to estimate the hazard rate of machine failure over time.
+  - Achieved the following performance metrics:
+    - **Concordance Index (C-Index)**:
+      - Model 1: **0.7783**
+      - Model 2: **0.7552**
+  - Validated the models using time-based cross-validation to ensure temporal robustness.
+
 ### 🚀 Personal Contribution
 As a member of the **Group6Capstone** team, I contributed significantly to the project through the following efforts:
 
-1. **Building Imputation Models**:
-   - Developed **CatBoost** and **Random Forest Regressor** models to impute missing values in key dataset features. These models were carefully tuned to ensure accuracy and robustness in predicting missing data points.
+1. **Feature Engineering and EDA**:
+   - Developed survival-related features, such as "Time to Failure," which was calculated from unplanned maintenance logs.
+   - Engineered machine-level attributes to represent historical maintenance schedules, part replacements, and operational time.
 
-2. **Critical Decision-Making**:
-   - After evaluating the models' performance and data integrity, I led the decision not to use these imputation methods. This decision was based on the observation that only 20% of the dataset contained viable data, making imputation potentially unreliable. This decision ensured the overall integrity and reliability of the project’s final analysis.
+2. **Model Development**:
+   - Designed and implemented the **Cox Proportional Hazards survivor model** to predict time-to-failure, focusing on hazard rates for each machine.
 
-3. **Collaborative EDA and Modeling**:
-   - Assisted in uncovering insights during EDA and contributed to feature engineering for downstream modeling efforts.
+3. **Validation and Optimization**:
+   - Assessed model performance using survival-specific metrics, such as Concordance Index, and refined features to improve predictions.
 
 ### 🚀 Value of the Solution
-This project delivered valuable insights and predictions, leading to:
-- Improved accuracy in [specific area, e.g., financial forecasting or customer segmentation].
-- Enhanced decision-making capabilities by leveraging machine learning techniques.
-- A foundation for scaling predictive models to solve similar challenges in related domains.
+This project delivered actionable insights and predictions, enabling Swire Coca-Cola to:
+- Prioritize maintenance for high-risk machines, reducing unexpected failures.
+- Save significant operational costs by minimizing reactive maintenance.
 
 ### Key Metrics
-- **Performance**: Achieved an average AUC score of [insert AUC score, e.g., 0.77].
-- **Accuracy**: Achieved a prediction accuracy of [insert accuracy, e.g., 91%].
+- **Concordance Index (C-Index)**:
+  - Model 1: **0.7783**
+  - Model 2: **0.7552**
 
-These metrics highlight the effectiveness of the approach and its applicability to real-world challenges.
+These metrics demonstrate the survivor model's capability to predict machine failures with precision and reliability.
 
 ### Challenges
 
 The project faced several significant challenges, including:
 
 1. **High Proportion of Missing Data**:
-   - Over 80% of the dataset contained null values, making it difficult to perform robust analyses and train reliable models without introducing potential biases.
+   - Over 80% of the dataset contained null values, requiring creative solutions, such as focusing on a 20% subset with viable data.
 
-2. **Unclear Target Variable**:
-   - The definition and consistency of the target variable were ambiguous, requiring additional preprocessing and domain-specific assumptions to ensure accurate and meaningful predictions.
+2. **Complex Target Definition**:
+   - The target variable, "Time to Failure," had to be constructed from raw logs by calculating time intervals between unplanned maintenance events.
 
-These challenges underscored the importance of meticulous data preprocessing, critical decision-making, and domain expertise in overcoming obstacles to achieve project success.
+3. **Temporal Dependencies**:
+   - Modeling time-to-failure introduced challenges related to event censoring, necessitating survival analysis techniques like the Cox model.
 
 ### Takeaways
 Key learnings from this project include:
-- The critical importance of data preprocessing in machine learning workflows.
-- How using modularized functions and classes improves code maintainability and reduces errors.
-- The significant value of hyperparameter tuning to achieve optimal model performance.
+- The critical importance of survival analysis techniques for time-based prediction challenges.
+- How data limitations influence modeling decisions and performance.
+- The value of time-based validation to ensure the model's applicability to real-world scenarios.
