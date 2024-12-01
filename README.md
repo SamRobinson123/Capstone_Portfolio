@@ -26,6 +26,18 @@ The primary goal of this project was to:
     - **Accuracy**: [Insert value, e.g., 92%].
     - **Other Metric (e.g., AUC)**: [Insert value, e.g., 0.85].
   - Models were evaluated using cross-validation to ensure generalizability.
+ 
+### 🚀 Personal Contribution
+As a member of the **Group6Capstone** team, I contributed significantly to the project through the following efforts:
+
+1. **Building Imputation Models**:
+   - Developed **CatBoost** and **Random Forest Regressor** models to impute missing values in key dataset features. These models were carefully tuned to ensure accuracy and robustness in predicting missing data points.
+
+2. **Critical Decision-Making**:
+   - After evaluating the models' performance and data integrity, I led the decision not to use these imputation methods. This decision was based on the observation that only 20% of the dataset contained viable data, making imputation potentially unreliable. This decision ensured the overall integrity and reliability of the project’s final analysis.
+
+3. **Collaborative EDA and Modeling**:
+   - Assisted in uncovering insights during EDA and contributed to feature engineering for downstream modeling efforts.
 
 ### 🚀 Value of the Solution
 This project delivered valuable insights and predictions, leading to:
