@@ -51,25 +51,20 @@ This project delivered valuable insights and predictions, leading to:
 
 These metrics highlight the effectiveness of the approach and its applicability to real-world challenges.
 
+### Challenges
+
+The project faced several significant challenges, including:
+
+1. **High Proportion of Missing Data**:
+   - Over 80% of the dataset contained null values, making it difficult to perform robust analyses and train reliable models without introducing potential biases.
+
+2. **Unclear Target Variable**:
+   - The definition and consistency of the target variable were ambiguous, requiring additional preprocessing and domain-specific assumptions to ensure accurate and meaningful predictions.
+
+These challenges underscored the importance of meticulous data preprocessing, critical decision-making, and domain expertise in overcoming obstacles to achieve project success.
+
 ### Takeaways
 Key learnings from this project include:
 - The critical importance of data preprocessing in machine learning workflows.
 - How using modularized functions and classes improves code maintainability and reduces errors.
 - The significant value of hyperparameter tuning to achieve optimal model performance.
-
-### 📈 Exploratory Data Analysis (EDA) Examples
-The following visualizations were critical during the data exploration phase and provide insight into key patterns in the dataset:
-
-#### Example Graph: Distribution of [Insert Feature Name]
-![Sample Graph](sample_graph.png)
-
-This graph illustrates [brief description of the graph, e.g., trends, distributions, or comparisons]. Additional visualizations can be found in the full notebook.
-"""
-#### Feature Importance
-![Feature Rank](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/Capture.JPG "Feature Rank")
-
-#### Default Rate by Education
-![Default Rate by Education](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/deafult%20rate%20by%20education.JPG "Default Rate by Education")
-
-#### Default Rate by Family Status
-![Default Rate by Family Status](https://raw.githubusercontent.com/SamRobinson123/Capstone_Portfolio/main/images/default%20rate%20by%20family%20status.JPG "Default Rate by Family Status")
